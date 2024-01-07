@@ -1,0 +1,27 @@
+spring:
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/clothing?serverTimezone=Asia/Seoul
+    username: root
+    password: 1q2w3e4r!
+    #만들어진 sql 보여줌
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    format-sql: true
+
+server:
+  port : 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+logging:
+  level:
+    com.coffeeatworks : DEBUG
